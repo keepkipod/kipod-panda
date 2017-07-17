@@ -1,0 +1,6 @@
+---
+- name: copy smart app
+  copy: src=smart-app dest=/tmp/ owner=root group=root mode=0755
+
+- name: npm install
+  npm: path=/tmp/smart-app
